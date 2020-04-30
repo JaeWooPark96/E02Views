@@ -14,7 +14,10 @@ public class ButtonsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buttons);
 
-        View.OnClickListener listener = new View.OnClickListener() {
+        //버튼이나 image들의 OnClickListener 한개 구현하고, 각 View 리스너를 등록하는 기법입니다.
+        //일단 각각 리스너를 만들어 등록하는 것보다 가독성이 있습니다.
+        //리스너는 1개, 이 리스너를 등록한 View는 여러개인 것입니다.
+        View.OnClickListener listener = new View.OnClickListener() {//리스너를 한개 구현합니다.
             @Override
             public void onClick(View view) {
                 String msg;
