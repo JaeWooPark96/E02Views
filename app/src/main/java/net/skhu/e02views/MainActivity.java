@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if(requestCode == 1 && resultCode == Activity.RESULT_OK){
-            Intent intent2 = new Intent(this, MemoActivity.class);
+            /*Intent intent2 = new Intent(this, MemoActivity.class);
             intent2.putExtra("title", memo.getTitle());
             intent2.putExtra("content", memo.getContent());
-            startActivityForResult(intent2, MEMO);
+            startActivityForResult(intent2, MEMO);*/
         }
     }
 }

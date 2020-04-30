@@ -44,8 +44,12 @@ public class SignupActivity extends AppCompatActivity {
                 String msg = "회원가입 성공: " + loginId + " " + email;
                 Toast.makeText(SignupActivity.this, msg, Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent();
-                setResult(Activity.RESULT_OK, intent);
+                //Intent intent = new Intent();
+                //setResult(Activity.RESULT_OK, intent);
+
+                Intent intent = new Intent(SignupActivity.this, MemoActivity.class);
+                startActivity(intent);
+
                 finish();
             }
         };
