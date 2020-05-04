@@ -84,7 +84,7 @@ public class AlertsActivity extends AppCompatActivity {
         builder.setNegativeButton(R.string.cancel, null);//NegativeButton 설정//취소버튼 누르면 아무것도 안 하도록 해주었습니다.
         AlertDialog dialog = builder.create();//다이얼로그를 만들어주었습니다. AlertDialog 를 만들어주었습니다.
         dialog.show();//AlertDialog 를 보여주었습니다.
-    }
+}
 
     //버튼의 리스너
     public void button4_clicked(View button) {
